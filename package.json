@@ -1,0 +1,34 @@
+{
+  "name": "frontend-tooling-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate code for frontend project, various tooling configurations setup, etc.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "start-static": "node ./static-server.js",
+    "build-dev": "webpack --config ./webpack.config.js --mode development",
+    "build-prod": "webpack --config ./webpack.config.js --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timdoubleu/all-the-boilerplates/.git"
+  },
+  "author": "Tim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timdoubleu/all-the-boilerplates/issues"
+  },
+  "homepage": "https://github.com/timdoubleu/all-the-boilerplates#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "connect": "^3.7.0",
+    "http-server": "^0.11.1",
+    "serve-static": "^1.14.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  }
+}
