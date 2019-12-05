@@ -1,0 +1,1 @@
+console.log("page two specific JS code");
