@@ -35,23 +35,23 @@ Producing a production build:
   - Then using the `HtmlWebpackPlugin` you can list an array of your pages of your application. The `chunks` key is used to tell webpack what scripts to put on the page, so a shared app script is used on all of the pages in the example below and then their page specific scripts are loaded.
   ```json
   entry: {
-    app: './src/js/app.js',
-    index: './src/js/index.js',
-    pageTwo: './src/js/page-two.js',
+    app: "./src/js/app.js",
+    index: "./src/js/index.js",
+    pageTwo: "./src/js/page-two.js",
   },
   
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/html/index.html',
+      template: "./src/html/index.html",
       inject: true,
-      chunks: ['app', 'index'],
-      filename: 'index.html'
+      chunks: ["app", "index"],
+      filename: "index.html"
     }),
     new HtmlWebpackPlugin({
-      template: './src/html/page-two.html',
+      template: "./src/html/page-two.html",
       inject: true,
-      chunks: ['app', 'pageTwo'],
-      filename: 'page-two.html'
+      chunks: ["app", "pageTwo"],
+      filename: "page-two.html"
     })
   ]
   ```
@@ -67,7 +67,7 @@ Producing a production build:
     rules: [{
       test: /\.html$/,
       use: [{
-        loader: 'html-loader',
+        loader: "html-loader",
         options: {
           interpolate: true
         }

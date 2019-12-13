@@ -1,4 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin');
+
 const path = require('path');
 
 module.exports = {
@@ -14,17 +16,17 @@ module.exports = {
   },
 
   // html-loader configuration to allow requires within
-  module: {
-    rules: [{
-      test: /\.html$/,
-      use: [{
-        loader: 'html-loader',
-        options: {
-          interpolate: true
-        }
-      }],
-    }]
-  },
+  // module: {
+  //   rules: [{
+  //     test: /\.html$/,
+  //     use: [{
+  //       loader: 'html-loader',
+  //       options: {
+  //         interpolate: true
+  //       }
+  //     }],
+  //   }]
+  // },
 
   plugins: [
     new HtmlWebpackPlugin({
@@ -40,6 +42,9 @@ module.exports = {
       inject: true,
       chunks: ['app', 'pageTwo'],
       filename: 'page-two.html'
-    })
+    }),
+    new HtmlWebpackPartialsPlugin({
+      path: './src/html/partials/head-tags.html'
+    }),
   ]
 };
