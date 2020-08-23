@@ -1,0 +1,13 @@
+{% macro footerMacro(page) %}
+
+<div>
+  {% if (page == 'pageOne') %}
+    <h3>Page One Footer</h3>
+  {% elif (page == 'pageTwo') %}
+    <h3> Page Two Footer</h3>
+  {% else %}
+    <h3> Fallback Footer! </h3>
+  {% endif %}
+</div>
+
+{% endmacro %}
