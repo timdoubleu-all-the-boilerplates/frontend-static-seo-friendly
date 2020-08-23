@@ -12,6 +12,9 @@ node_modules/
 # Ignore the contents of dist folders but keep the folder itself
 # https://stackoverflow.com/questions/4250063/how-to-gitignore-all-files-folder-in-a-folder-but-not-the-folder-itself
 
+dist/*
+.cache/*
+
 dist/js/*
 !dist/js/.gitkeep
 

@@ -2,9 +2,9 @@
   "name": "frontend-tooling-boilerplate",
   "version": "1.0.0",
   "description": "Boilerplate code for frontend project, various tooling configurations setup, etc.",
-  "main": "src/index.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.config.js --mode development"
+    "dev": "parcel src/html/index.html src/html/page-two.html",
+    "build": "parcel build src/html/index.html src/html/page-two.html"
   },
   "repository": {
     "type": "git",
@@ -17,25 +17,11 @@
   },
   "homepage": "https://github.com/timdoubleu/all-the-boilerplates#readme",
   "devDependencies": {
-    "@babel/core": "^7.7.4",
-    "@babel/preset-env": "^7.7.4",
-    "babel-loader": "^8.0.6",
-    "clean-webpack-plugin": "^3.0.0",
-    "connect": "^3.7.0",
-    "css-loader": "^3.2.0",
-    "html-webpack-plugin": "^3.2.0",
-    "http-server": "^0.12.3",
-    "mini-css-extract-plugin": "^0.8.0",
-    "optimize-css-assets-webpack-plugin": "^5.0.3",
-    "serve-static": "^1.14.1",
-    "style-loader": "^1.0.1",
-    "uglifyjs-webpack-plugin": "^2.2.0",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.11.0"
+    "parcel-bundler": "^1.12.4",
+    "posthtml-include": "^1.4.3",
+    "sass": "^1.26.10"
   },
   "dependencies": {
-    "handlebars-loader": "^1.7.1",
-    "jquery": "^3.5.0"
+    "jquery": "^3.5.1"
   }
 }
