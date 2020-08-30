@@ -1,6 +1,6 @@
 // App wide root JS, a place you can import your libraries, and write JS needed across the entire site
-import { saySomething } from './lib/utility';
-import $ from 'jquery';
+import { saySomething } from './utility';
+// import $ from 'jquery';
 
 console.log('App wide JS code, including libraries, like jQuery:');
 console.log($);

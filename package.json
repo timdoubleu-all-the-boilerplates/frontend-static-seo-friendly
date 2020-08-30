@@ -2,10 +2,6 @@
   "name": "frontend-tooling-boilerplate",
   "version": "1.0.0",
   "description": "Boilerplate code for frontend project, various tooling configurations setup, etc.",
-  "scripts": {
-    "dev": "set USER=tacoUser && parcel src/html/index.njk",
-    "build": "parcel build src/html/index.njk"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/timdoubleu/all-the-boilerplates/.git"
@@ -17,12 +13,18 @@
   },
   "homepage": "https://github.com/timdoubleu/all-the-boilerplates#readme",
   "devDependencies": {
-    "nunjucks": "^3.2.2",
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-nunjucks": "^2.2.1",
-    "sass": "^1.26.10"
-  },
-  "dependencies": {
-    "jquery": "^3.5.1"
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "browser-sync": "^2.26.12",
+    "del": "^5.1.0",
+    "esm": "^3.2.25",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0"
   }
 }
